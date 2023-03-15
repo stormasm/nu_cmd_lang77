@@ -11,6 +11,8 @@ There is one extra branch here besides main and that is
 
 On the main branch this brings up nushell with just nu_cmd_lang and nothing else...
 
+### To build this repo from scratch after each release
+
 Start out with a copy of the src directory from nushell...
 The rest of the crates are pulled in from crates.io
 
