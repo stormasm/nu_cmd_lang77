@@ -21,7 +21,13 @@ pkg-fmt = "tgz"
 [package.metadata.binstall.overrides.x86_64-pc-windows-msvc]
 pkg-fmt = "zip"
 
+[workspace]
+members = [
+	"crates/nu-cmd-shell",
+]
+
 [dependencies]
+nu-cmd-shell = { path = "./crates/nu-cmd-shell", version = "0.77.1" }
 chrono = { version = "0.4.23", features = ["serde"] }
 crossterm = "0.24.0"
 ctrlc = "3.2.1"
